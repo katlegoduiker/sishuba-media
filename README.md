@@ -37,7 +37,7 @@ To locally run or modify the website, follow these steps:
 Once the website is opened in a web browser, you can navigate through the different pages using the navigation menu:
 
 - **Home**: Provides an introduction to the business and a call-to-action button to get in touch.
-- **About Me**: Provides information about the business, including its background, the team members.
+- **About**: Provides information about the business, including its background, the team members.
 - **Services**: Highlights the services offered by the business, catering to different markets
 - **Work**: Displays a portfolio of some of the projects the business worked on.
 - **Contact**: Provides contact information for individuals to get in touch with the business.
