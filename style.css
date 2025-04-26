@@ -1,0 +1,984 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.carousel-wrapper {
+    background-color: #262626;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+/* Carousel layout */
+#myCarousel {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.carousel-inner img {
+    object-fit: cover;
+    height: 400px;
+    width: 100%;
+}
+
+/* Text inside slides */
+.carousel-item h1 {
+    color: #5bb209;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.carousel-item p {
+    color: #ffffff;
+    font-family: "Wix Madefor Text", sans-serif;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+/* Control buttons */
+#myPrevBtn,
+#myNextBtn {
+    background-color: #5bb209;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 12px 16px;
+    height: 40px;
+    width: 40px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#myPrevBtn:hover,
+#myNextBtn:hover {
+    background-color: #444;
+}
+
+/* Flex wrapper for arrows and labels */
+.carousel-controls-wrapper {
+    position: absolute;
+    bottom: -60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 10;
+}
+
+.carousel-controls-wrapper span {
+    color: white;
+    margin: 0 8px;
+    font-size: 14px;
+    align-self: center;
+}
+
+#above-nav {
+    width: 100vw;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+#above-nav img {
+    display: block;
+    width: 100vw;
+    height: auto;
+    max-width: none;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-color: #5bb209;
+    border: none;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.navbar-collapse {
+    padding-left: 18px;
+}
+
+.nav-item a {
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.logo {
+    height: 80px;
+    max-height: 80px;
+    width: auto;
+}
+
+/*Hero Nav*/
+.hero-nav {
+    display: block;
+    margin: auto;
+    margin-top: -70px;
+    margin-bottom: 150px;
+}
+
+#nav {
+    font-family: "Wix Madefor Text", sans-serif;
+    font-size: 14px;
+    margin: auto;
+    padding-left: 40px;
+    text-transform: uppercase;
+}
+
+/*Hero Section*/
+.hero {
+    background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.450), rgba(0, 0, 0, 0.60)), url(assets/media/cremora_.jpg);
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.450)), to(rgba(0, 0, 0, 0.60))), url(assets/media/cremora_.jpg);
+    background: linear-gradient(-80deg, #28272780, #262626), url(assets/media/clere_.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 120px 0;
+}
+
+/*Button*/
+.btn-primary {
+    background-color: #5bb209;
+    border-radius: 25px;
+    border: #5bb209;
+    display: block;
+    font-family: "Wix Madefor Text", sans-serif;
+    font-weight: 600;
+    margin: auto;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.btn-primary:hover {
+    background-color: #444;
+    border: none;
+}
+
+/*Hero Text*/
+.text-center h1 {
+    color: aliceblue;
+    font-family: "Montserrat", sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.text-center p {
+    color: aliceblue;
+    font-family: "Wix Madefor Text", sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+/*Hero Section Ends*/
+
+/*About us*/
+.about-us {
+    background-color: #262626;
+    padding: 0 40px;
+}
+
+.about-us h1 {
+    color: #ffffff;
+    font-family: "Wix Madefor Text", sans-serif;
+    font-size: 35px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 80px 0;
+}
+
+.about-us h6 {
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+}
+
+.about-us img {
+    display: block;
+    margin: auto;
+}
+
+.about-us p {
+    color: #ffffff;
+    font-family: "Wix Madefor Text", sans-serif;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.about {
+    -webkit-box-shadow: -15px -25px 40px 0px #1b1b1b;
+    box-shadow: -15px -25px 40px 0px #1b1b1b;
+    padding: 30px;
+}
+
+.about h6 {
+    font-family: "Wix Madefor Text", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.vision {
+    margin-top: 60px;
+}
+
+.vision h6 {
+    font-family: "Wix Madefor Text", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 15px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.vision p {
+    font-family: "Wix Madefor Text", sans-serif;
+    margin-top: 0;
+    padding: 0 250px;
+    text-align: center;
+}
+
+/*Our Team*/
+.our-team {
+    background-color: #262626;
+    padding: 0 100px;
+}
+
+.our-team h1 {
+    color: #ffffff;
+    font-family: "Wix Madefor Text", sans-serif;
+    font-size: 35px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 80px 0;
+}
+
+
+.member {
+    -webkit-box-shadow: -15px -25px 40px 0px #1b1b1b;
+    box-shadow: -15px -25px 40px 0px #1b1b1b;
+    border-radius: 50px;
+    padding: 30px;
+}
+
+.member h6 {
+    color: #5bb209;
+    font-family: "Wix Madefor Text", sans-serif;
+    font-weight: 700;
+    margin-top: 25px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.member p {
+    color: #ffffff;
+    font-family: "Wix Madefor Text", sans-serif;
+    font-size: 16px;
+    margin-top: -5px;
+    text-align: center;
+}
+
+.member img {
+    display: block;
+    gap: -150px;
+    margin: auto;
+    width: 180px;
+}
+
+.member .img-circle {
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 5px;
+}
+
+/*Our Services*/
+#our-services {
+    margin-bottom: 80px;
+    padding-bottom: 120px;
+    background: linear-gradient(-80deg, #282727bb, #262626), url(assets/media/mcdonalds_.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#our-services h1 {
+    padding: 80px 0;
+}
+
+#our-services h6 {
+    font-family: "Wix Madefor Text", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/**/
+h1 {
+    color: #ffffff;
+    font-weight: 700;
+    text-align: center;
+}
+
+/*Our Clients*/
+.clients {
+    background-color: #ffffff;
+    margin: auto;
+    width: 1200px;
+}
+
+.clients h1 {
+    color: #646464;
+    font-family: "Wix Madefor Text", sans-serif;
+    font-size: 35px;
+    font-weight: 900;
+    padding-bottom: 65px;
+    text-align: center;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.clients img {
+    display: block;
+    margin: auto;
+}
+
+.client {
+    -webkit-box-shadow: -30px 0px 50px -40px rgba(77, 77, 77, 0.5);
+    box-shadow: -30px 0px 50px -40px rgba(77, 77, 77, 0.5);
+}
+
+.img-size {
+    width: 200px;
+    height: auto;
+}
+
+/*Testimonials*/
+.testimonials {
+    background-color: #262626;
+    margin-top: 60px;
+    padding-bottom: 50px;
+}
+
+.testimonials h1 {
+    color: #5bb209;
+    font-family: "Wix Madefor Text", sans-serif;
+    font-size: 35px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 50px 0;
+}
+
+.testimonials img {
+    display: block;
+    margin: auto;
+    margin-top: -45px;
+}
+
+.responsive-img {
+    width: 150px;
+    height: auto;
+}
+
+.testimonial {
+    padding: 20px 60px;
+}
+
+.testimonial h5 {
+    color: #fff;
+    font-family: "Wix Madefor Text", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.testimonial p {
+    color: #ffffff;
+    font-family: "Wix Madefor Text", sans-serif;
+    text-align: center;
+}
+
+#vox {
+    padding: 20px 450px;
+}
+
+.contact-us {
+    background-color: #646464;
+    font-family: "Wix Madefor Text", sans-serif;
+    padding: 50px 0;
+}
+
+.contact-us h1 {
+    padding-bottom: 50px;
+    font-family: "Wix Madefor Text", sans-serif;
+    font-size: 35px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.contact {
+    display: block;
+    margin: auto;
+}
+
+.contact h4 {
+    color: #ffffff;
+    font-weight: 700;
+    margin-left: 150px;
+    text-transform: uppercase;
+}
+
+.contact p {
+    color: #ffffff;
+    font-family: "Wix Madefor Text", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 150px;
+    margin-bottom: 20px;
+}
+
+#socials a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+#socials i {
+    font-size: 30px;
+    color: white;
+}
+
+#socials {
+    margin-left: 150px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+form {
+    background-color: #ffffff;
+    display: block;
+    margin: auto;
+    width: 75%;
+    padding: 70px 40px;
+    font-size: 16px;
+    font-weight: 400;
+    -webkit-box-shadow: -40px 0px 50px -40px rgba(77, 77, 77, 0.5);
+    box-shadow: -40px 0px 50px -40px rgba(77, 77, 77, 0.5);
+}
+
+form input {
+    width: 100%;
+    border: none;
+    border-radius: 0px;
+    padding-top: 30px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #262626;
+}
+
+.col-half1 {
+    width: 50%;
+    float: left;
+    padding-right: 2px;
+}
+
+.col-half2 {
+    width: 50%;
+    float: left;
+    padding-left: 2px;
+}
+
+form button {
+    border-color: transparent;
+    border-radius: 0px;
+    color: #ffffff;
+    font-family: "Wix Madefor Text", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 8px 25px;
+    background-color: #5bb209;
+    float: right;
+    margin-top: 0.8em;
+    margin-bottom: 3em;
+}
+
+button:hover {
+    background-color: #444;
+}
+
+textarea {
+    width: 100%;
+    border: none;
+    border-radius: 0px;
+    height: 130px;
+    padding-top: 25px;
+    border-bottom: 1px solid #1327437d;
+    margin-bottom: 1em;
+}
+
+/*scroll to top button*/
+#myBtn {
+    border: none;
+    background-color: #5bb209;
+    border-radius: 50%;
+    bottom: 20px;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 12px;
+    position: fixed;
+    height: 40px;
+    right: 10px;
+    width: 40px;
+    z-index: 99;
+}
+
+#myBtn:hover {
+    background-color: #444;
+    border: none;
+}
+
+.footer {
+    background-color: #262626;
+    color: #ffffff;
+    font-family: "Wix Madefor Text", sans-serif;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/*Media Queries*/
+
+@media (max-width: 600px) {
+
+    #above-nav img {
+        height: 10px;
+    }
+
+    .logo {
+        margin-left: 20px;
+        height: 55px;
+    }
+
+    /*Hero Nav*/
+    .hero-nav {
+        margin-top: -30px;
+        margin-bottom: 60px;
+    }
+
+    /*Hero Section*/
+    .hero {
+        padding: 50px 0;
+    }
+
+    .btn-primary {
+        font-size: 14px;
+        margin-top: 35px;
+        padding: 10px 25px
+    }
+
+    .text-center {
+        padding: 0 30px;
+    }
+
+    .text-center h1 {
+        font-size: 22px;
+    }
+
+    .text-center p {
+        font-size: 16px;
+    }
+
+    /*About Us
+    Also Our Services
+    */
+
+    .about-us {
+        padding: 0 10px;
+    }
+
+    .about-us h1 {
+        font-size: 25px;
+        padding: 50px 0;
+    }
+
+    .about-us p {
+        font-size: 16px;
+    }
+
+    .vision P {
+        padding: 0 10px;
+    }
+
+    /*Our Team*/
+    .our-team {
+        padding: 0 30px;
+    }
+
+    .our-team h1 {
+        font-size: 25px;
+    }
+
+    /*Clients*/
+    .clients {
+        width: auto;
+    }
+
+    .clients h1 {
+        font-size: 25px;
+    }
+
+    .img-size {
+        width: 120px;
+        height: auto;
+    }
+
+    .testimonials h1 {
+        font-size: 25px;
+    }
+
+    /*double quotes image*/
+    .responsive-img {
+        width: 100px;
+        height: auto;
+    }
+
+    #vox {
+        padding: 20px 60px;
+    }
+
+    .contact-us h1 {
+        font-size: 25px;
+    }
+
+    .contact h4 {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .contact p {
+        margin-left: 0;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    #socials {
+        margin-left: 130px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    form {
+        width: 90%;
+    }
+}
+
+/*Minimum Screen Width: 601px*/
+@media (min-width: 601px) and (max-width: 768px) {
+
+    #above-nav img {
+        height: 10px;
+    }
+
+    .logo {
+        margin-left: 20px;
+        height: 60px;
+    }
+
+    /*Hero Section*/
+    .hero {
+        padding: 110px 0;
+    }
+
+    .hero-nav {
+        margin-top: -85px;
+        margin-bottom: 100px;
+    }
+
+    .btn-primary {
+        font-size: 14px;
+        padding: 10px 25px
+    }
+
+    .text-center {
+        padding: 0 30px;
+    }
+
+    .text-center h1 {
+        font-size: 23px;
+    }
+
+    .text-center p {
+        font-size: 16px;
+    }
+
+    /*About Us
+    Also Our Services
+    */
+    .about-us {
+        padding: 0 10px;
+    }
+
+    .about-us h1 {
+
+        font-size: 27px;
+        padding: 60px 0;
+    }
+
+    .about-us p {
+        font-size: 16px;
+    }
+
+    .vision P {
+        padding: 0 0;
+    }
+
+    /*Our Team*/
+
+    .our-team {
+        padding: 0 30px;
+    }
+
+    .our-team h1 {
+        font-size: 27px;
+    }
+
+
+    /*Clients*/
+    .clients {
+        width: auto;
+    }
+
+    .clients h1 {
+        font-size: 27px;
+    }
+
+    .img-size {
+        width: 150px;
+        height: auto;
+    }
+
+    /*Testimonials*/
+    .testimonials h1 {
+        font-size: 25px;
+    }
+
+    .responsive-img {
+        width: 100px;
+        height: auto;
+    }
+
+    #vox {
+        padding: 20px 60px;
+    }
+
+    /*Contact Us*/
+    .contact-us h1 {
+        font-size: 25px;
+    }
+
+    .contact h4 {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .contact p {
+        margin-left: 0;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    #socials {
+        margin-left: 220px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+
+    form {
+        width: 90%;
+    }
+
+}
+
+/*Minimum Screen Width: 769px*/
+@media (min-width: 769px) and (max-width: 991px) {
+
+    #above-nav img {
+        height: 10px;
+    }
+
+    .logo {
+        margin-left: 20px;
+        height: 70px;
+    }
+
+    .hero-nav {
+        margin-top: -75px;
+        margin-bottom: 100px;
+    }
+
+    /*Hero Section*/
+    .hero {
+        padding: 110px 0;
+    }
+
+    .text-center {
+        padding: 0;
+    }
+
+    .text-center h1 {
+        font-size: 30px;
+    }
+
+    .text-center p {
+        font-size: 16px;
+    }
+
+    .btn-primary {
+        font-size: 15px;
+        padding: 10px 25px
+    }
+
+    /*About Us
+    Also Our Services
+    */
+
+    .about-us h1 {
+        font-size: 30px;
+        padding: 60px 0;
+    }
+
+    .about-us p {
+        font-size: 16px;
+    }
+
+    .vision P {
+        padding: 0 0;
+    }
+
+    .our-team {
+        padding: 0 50px;
+    }
+
+    .our-team h1 {
+        font-size: 30px;
+        padding: 60px 0;
+    }
+
+    /*Clients*/
+    .clients {
+        width: auto;
+    }
+
+    .clients h1 {
+        font-size: 30px;
+    }
+
+    .client {
+        .img-size {
+            width: 150px;
+            height: auto;
+        }
+    }
+
+    .testimonials h1 {
+        font-size: 30px;
+    }
+
+    .responsive-img {
+        width: 120px;
+        height: auto;
+    }
+
+    #vox {
+        padding: 20px 80px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1024px) {
+
+    .logo {
+        height: 75px;
+    }
+
+    .hero-nav {
+        margin-top: -75px;
+        margin-bottom: 140px;
+    }
+
+    .hero {
+        padding: 100px 0;
+    }
+
+    .text-center h1 {
+        font-size: 30px;
+    }
+
+    .vision p {
+        padding: 0 50px;
+    }
+
+    .clients {
+        width: auto;
+    }
+
+    #vox {
+        padding: 20px 60px;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+
+    .hero-nav {
+        margin-top: -70px;
+        margin-bottom: 150px;
+    }
+
+    .hero {
+        padding: 100px 0;
+    }
+
+    .text-center h1 {
+        font-size: 30px;
+    }
+
+    .vision p {
+        padding: 0 50px;
+    }
+
+    .clients {
+        width: auto;
+    }
+
+    #vox {
+        padding: 20px 80px;
+    }
+}

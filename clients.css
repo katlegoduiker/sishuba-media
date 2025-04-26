@@ -1,0 +1,294 @@
+html,
+body {
+    background-color: #262626;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+#above-nav {
+    width: 100vw;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+#above-nav img {
+    display: block;
+    width: 100vw;
+    height: auto;
+    max-width: none;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-color: #5bb209;
+    border: none;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.navbar-collapse {
+    padding-left: 18px;
+}
+
+.nav-item a {
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.logo {
+    height: 80px;
+    max-height: 80px;
+    width: auto;
+}
+
+/*Hero Nav*/
+.hero-nav {
+    display: block;
+    margin: auto;
+    margin-top: -100px;
+    margin-bottom: 150px;
+}
+
+#nav {
+    font-family: "Wix Madefor Text", sans-serif;
+    font-size: 14px;
+    margin: auto;
+    padding-left: 40px;
+    text-transform: uppercase;
+}
+
+/*Hero Section*/
+.hero {
+    padding: 150px 0;
+}
+
+.carousel-wrapper {
+   
+    margin-top: -180px;
+    padding-bottom: 200px;
+    position: relative;
+}
+
+/* Carousel layout */
+#myCarousel {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.carousel-inner img {
+    object-fit: cover;
+    height: 380px;
+    width: 100%;
+}
+
+/* Text inside slides */
+.carousel-item h1 {
+    color: #5bb209;
+    font-family: "Wix Madefor Text", sans-serif;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.carousel-item p {
+    color: #ffffff;
+    font-family: "Wix Madefor Text", sans-serif;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+/* Control buttons */
+#myPrevBtn,
+#myNextBtn {
+    background-color: #5bb209;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 12px 16px;
+    height: 40px;
+    width: 40px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#myPrevBtn:hover,
+#myNextBtn:hover {
+    background-color: #444;
+}
+
+/* Flex wrapper for arrows and labels */
+.carousel-controls-wrapper {
+    position: absolute;
+    bottom: -80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 10;
+}
+
+.carousel-controls-wrapper span {
+    color: white;
+    margin: 0 8px;
+    font-family: "Wix Madefor Text", sans-serif;
+    font-size: 14px;
+    align-self: center;
+}
+
+.footer {
+    background-color: #262626;
+    border-top: 1px solid #3e3e3e;
+    color: #ffffff;
+    font-family: "Wix Madefor Text", sans-serif;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+/*Media Queries*/
+@media (max-width: 600px) {
+
+    #above-nav img {
+        height: 10px;
+    }
+
+    .logo {
+        margin-left: 20px;
+        height: 55px;
+    }
+
+    /*Hero Nav*/
+    .hero-nav {
+        margin-top: -30px;
+        margin-bottom: 60px;
+    }
+
+    /*Hero Section*/
+    .hero {
+        background-size: 650%;
+        padding: 50px 0;
+    }
+
+    .carousel-wrapper {
+        background-color: #262626;
+        margin-top: -40px;
+        padding-bottom: 150px;
+        position: relative;
+    }
+
+    .carousel-inner img {
+        object-fit: cover;
+        height: 180px;
+        width: 100%;
+    }
+
+}
+
+/*Minimum Screen Width: 601px*/
+@media (min-width: 601px) and (max-width: 768px) {
+
+    #above-nav img {
+        height: 10px;
+    }
+
+    .logo {
+        margin-left: 20px;
+        height: 60px;
+    }
+
+    /*Hero Section*/
+    .hero {
+        background-size: 520%;
+        padding: 110px 0;
+    }
+
+    .hero-nav {
+        margin-top: -85px;
+        margin-bottom: 100px;
+    }
+
+    .carousel-inner img {
+        object-fit: cover;
+        height: 200px;
+        width: 100%;
+    }
+}
+
+/*Minimum Screen Width: 769px*/
+@media (min-width: 769px) and (max-width: 991px) {
+
+    #above-nav img {
+        height: 10px;
+    }
+
+    .logo {
+        margin-left: 20px;
+        height: 70px;
+    }
+
+    .hero-nav {
+        margin-top: -75px;
+        margin-bottom: 100px;
+    }
+
+    /*Hero Section*/
+    .hero {
+        background-size: 460%;
+        padding: 110px 0;
+    }
+
+    .carousel-inner img {
+        object-fit: cover;
+        height: 250px;
+        width: 100%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1024px) {
+
+    .logo {
+        height: 75px;
+    }
+
+    .hero-nav {
+        margin-top: -75px;
+        margin-bottom: 140px;
+    }
+
+    .hero {
+        background-size: 380%;
+        padding: 100px 0;
+    }
+
+    .carousel-inner img {
+        object-fit: cover;
+        height: 250px;
+        width: 100%;
+    }
+
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+
+    .hero-nav {
+        margin-top: -70px;
+        margin-bottom: 150px;
+    }
+
+    .hero {
+        padding: 100px 0;
+    }
+
+}
